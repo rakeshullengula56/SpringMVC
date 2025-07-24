@@ -4,6 +4,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -13,9 +14,34 @@ import java.util.*;
 @Controller
 public class HomeController {
 
+    @ModelAttribute("course")
+    public String courseName(){
+        return "java";
+    }
+
     @RequestMapping("/")
     public String home(){
         return "index";
+    }
+    @RequestMapping("alien")
+    public String addAlien(){
+        return "Alien";
+    }
+
+    /*@RequestMapping("addAlien")
+    public ModelAndView getAlien(@RequestParam("id") int id,@RequestParam("name") String name, ModelAndView mv){
+        Alien alien=new Alien();
+        alien.setId(id);
+        alien.setName(name);
+        mv.addObject("alien",alien);
+        mv.setViewName("alienView");
+        return mv;
+    }
+     */
+    @RequestMapping("addAlien")//@ModelAttribute is optional if name in jsp,
+    // and parameter name in method is same
+    public String getAlien(/*@ModelAttribute("alien")*/ Alien alien){
+        return "alienView";
     }
 
     /* this is Servlet way of handling forms, but we need Spring boot Way
