@@ -1,0 +1,39 @@
+body {
+    background: #f6fbf8;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #272b30;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 48px;
+}
+
+h2 span {
+    color: #208740; /* green for result */
+    font-weight: bold;
+}
+
+h2[style*="color:red"] {
+    color: #d32f2f !important; /* for error messages */
+    font-weight: 600;
+}
+
+a {
+    display: block;
+    width: fit-content;
+    margin: 32px auto 0 auto;
+    text-decoration: none;
+    background: #337ab7;
+    color: #fff;
+    padding: 9px 26px;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-shadow: 0 2px 12px rgba(51, 122, 183, 0.06);
+    transition: background 0.2s;
+}
+
+a:hover {
+    background: #1d4e7e;
+}
