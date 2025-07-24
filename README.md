@@ -3,11 +3,8 @@
   Filename: README.md
 -->
 
-<h1 align="center" style="color:#2971c2;">🌟 SpringMVC Multi-Expression Calculator 🌟</h1>
+<h1 align="center" style="color:#2971c2;"> SpringMVC Multi-Expression Calculator</h1>
 
-<p align="center">
-  <img src="images/calculator_demo.png" alt="Calculator Screenshot" width="480"/>
-</p>
 
 <p align="center" style="font-size:18px;">
   A simple, modern, and flexible calculator built with <b>Spring MVC, JSP, and pure Java</b>.<br>
@@ -92,6 +89,6 @@ Output:   <span style="color:#208740;font-weight:bold;">10.0</span>
 ---
 
 <p align="center" style="font-size:16px">
-  <b>Enjoy using the SpringMVC Calculator! ⭐️</b>
+  <b>Enjoy using the SpringMVC Calculator</b>
 </p>
 
